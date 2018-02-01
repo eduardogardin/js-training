@@ -1,0 +1,17 @@
+{
+  "name": "js-training",
+  "version": "1.0.0",
+  "description": "js training",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "eduardogardin",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.1.0",
+    "jest": "^22.1.4",
+    "regenerator-runtime": "^0.11.1"
+  }
+}
