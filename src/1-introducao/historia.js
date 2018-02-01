@@ -1,5 +1,5 @@
 
-export const surgimento = {
+const surgimento = {
     ano: 1995,    
     descricao: 'Javascript',
     propositos: [
@@ -14,10 +14,22 @@ export const surgimento = {
     ]
 };
 
-export const caracteristicas = [
+const caracteristicas = [
     'Interpretada',
     'Case sensitive',
     'Regra de nomenclatura das variáveis do C',
-    'Dinâmica',
-    'Hoisting dos blocos'
+    'Dinâmica'
 ];
+
+const caseSensitiveBehavior = () => {
+
+    const caseSensitive = 'I \'m case sensitive';
+    const caseInsensitive = 'I \'m case insensitive';
+
+    return {
+        caseSensitive: caseSensitive,
+        caseInsensitive: CASEINSENSITIVE
+    };
+}
+
+module.exports = { surgimento, caracteristicas, caseSensitiveBehavior };

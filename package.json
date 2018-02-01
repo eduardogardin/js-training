@@ -4,7 +4,8 @@
   "description": "js training",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test.watch": "jest --watchAll"
   },
   "author": "eduardogardin",
   "license": "ISC",
