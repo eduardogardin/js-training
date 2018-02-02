@@ -10,7 +10,7 @@ test(' destructuring from function args', () => {
     };
     const result = extractIdAndNameFromArguments(object);
 
-    expect(result.id).toEqual('1Eduardo');
+    expect(result).toEqual('1Eduardo');
 });
 
 test(' destructuring from object', () => {
