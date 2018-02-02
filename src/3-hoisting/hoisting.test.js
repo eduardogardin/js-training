@@ -13,9 +13,7 @@ describe('Hoisting', () => {
     });
 
     it(' let not doing hoisting throwing error', () => {
-        const result = resolvingHoistingWithLet();
-
-        expect(result.value).toBeUndefined();
+        expect(() => resolvingHoistingWithLet()).toThrowError();
     });
 
     it(' doesn\'t work on initialization ', () => {
