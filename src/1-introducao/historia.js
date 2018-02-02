@@ -14,13 +14,6 @@ const surgimento = {
     ]
 };
 
-const caracteristicas = [
-    'Interpretada',
-    'Case sensitive',
-    'Regra de nomenclatura das variáveis do C',
-    'Dinâmica'
-];
-
 const caseSensitiveBehavior = () => {
 
     const caseSensitive = 'I \'m case sensitive';
@@ -30,6 +23,6 @@ const caseSensitiveBehavior = () => {
         caseSensitive: caseSensitive,
         caseInsensitive: CASEINSENSITIVE
     };
-}
+};
 
-module.exports = { surgimento, caracteristicas, caseSensitiveBehavior };
+module.exports = { surgimento, caseSensitiveBehavior };

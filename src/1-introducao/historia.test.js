@@ -9,13 +9,6 @@ describe('História do Javascript', () => {
         expect(surgimento.propositos[1]).toEqual('Comportamento para páginas web estáticas');
     });
 
-    it('características', () => {
-        expect(caracteristicas[0]).toEqual('Interpretada');
-        expect(caracteristicas[1]).toEqual('Case sensitive');
-        expect(caracteristicas[2]).toEqual('Regra de nomenclatura das variáveis do C');
-        expect(caracteristicas[3]).toEqual('Dinâmica');
-    });
-
     it('case sensitive behavior', () => {
         expect(() => caseSensitiveBehavior()).toThrowError();
     });
