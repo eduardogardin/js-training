@@ -1,5 +1,5 @@
 
-const surgimento = {
+export const surgimento = {
     ano: 1995,    
     descricao: 'Javascript',
     propositos: [
@@ -14,7 +14,7 @@ const surgimento = {
     ]
 };
 
-const caseSensitiveBehavior = () => {
+export const caseSensitiveBehavior = () => {
 
     const caseSensitive = 'I \'m case sensitive';
     const caseInsensitive = 'I \'m case insensitive';
@@ -24,5 +24,3 @@ const caseSensitiveBehavior = () => {
         caseInsensitive: CASEINSENSITIVE
     };
 };
-
-module.exports = { surgimento, caseSensitiveBehavior };

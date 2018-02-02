@@ -1,4 +1,4 @@
-const { surgimento, caracteristicas, caseSensitiveBehavior } = require('./historia');
+import { surgimento, caracteristicas, caseSensitiveBehavior } from './historia';
 
 describe('História do Javascript', () => {
 

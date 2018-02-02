@@ -1,5 +1,5 @@
 
-const { definicaoResumida, initializeBeforeDeclare, resolvingHoistingWithLet, initializationNonCausingHosting } = require('./hoisting');
+import { definicaoResumida, initializeBeforeDeclare, resolvingHoistingWithLet, initializationNonCausingHosting } from './hoisting';
 
 describe('Hoisting', () => {
 
@@ -13,7 +13,9 @@ describe('Hoisting', () => {
     });
 
     it(' let not doing hoisting throwing error', () => {
-        expect(() => resolvingHoistingWithLet()).toThrowError();
+        const result = resolvingHoistingWithLet();
+
+        expect(result.value).toBeUndefined();
     });
 
     it(' doesn\'t work on initialization ', () => {

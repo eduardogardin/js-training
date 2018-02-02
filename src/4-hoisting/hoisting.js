@@ -1,7 +1,7 @@
 
-const definicaoResumida = 'Todas as declarações são movidas para o topo do bloco antes de ser interpretado';
+export const definicaoResumida = 'Todas as declarações são movidas para o topo do bloco antes de ser interpretado';
 
-const initializeBeforeDeclare = () => {
+export const initializeBeforeDeclare = () => {
 
     hoistedVariable = 'hoisted';
 
@@ -14,20 +14,20 @@ const initializeBeforeDeclare = () => {
     return objectUsingHoistedVariable;
 };
 
-const resolvingHoistingWithLet = () => {
+export const resolvingHoistingWithLet = () => {
 
-    hoistedVariable = 'hoisted';
+    hoistedLetVariable = 'hoisted';
     
     const objectUsingHoistedVariable = {
-        value: hoistedVariable
-    }
+        value: hoistedLetVariable
+    };
 
-    let hoistedVariable;
+    let hoistedLetVariable;
 
     return objectUsingHoistedVariable;
 };
 
-const initializationNonCausingHosting = () => {
+export const initializationNonCausingHosting = () => {
 
     const objectUsingHoistedVariable = {
         value: hoistedVariable
@@ -37,5 +37,3 @@ const initializationNonCausingHosting = () => {
 
     return objectUsingHoistedVariable;
 };
-
-module.exports = { definicaoResumida, initializeBeforeDeclare, resolvingHoistingWithLet, initializationNonCausingHosting };
