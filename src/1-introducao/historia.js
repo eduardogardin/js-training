@@ -10,7 +10,7 @@ export const surgimento = {
         'NÃO É JAVA',
         'ECMAScript => Padronização',
         'ES5 Lançado em 2009',
-        'ES6 Lançado em 20015'
+        'ES6 Lançado em 2015'
     ]
 };
 

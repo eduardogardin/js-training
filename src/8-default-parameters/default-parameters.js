@@ -8,3 +8,8 @@ export const defaultValueWithFunction = (value, callback = () => value) => {
     
     return callback(value);
 };
+
+export const calculaDebito = (valorDebito = 0, valorInicial = 0) => {
+
+    return valorDebito + valorInicial;
+}

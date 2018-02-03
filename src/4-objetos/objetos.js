@@ -23,9 +23,17 @@ const johnDinamicProperty = {};
 johnDinamicProperty[`${nomeKey}_key`] = johnLiteral.nome;
 johnDinamicProperty[`${emailKey}_key`] = johnLiteral.email;
 
+johnDinamicProperty.nome_key = johnLiteral.nome;
+johnDinamicProperty[`${emailKey}_key`] = johnLiteral.email;
+
 const johnConciseProperty = {
     nome,
     email
+};
+
+const johnConcisePropertyDynamic = {
+    ['nome']: nome,
+    ['email']: email
 };
 
 const pessoas = [ johnLiteral, johnProperty, johnPropertyKey, johnDinamicProperty ];
