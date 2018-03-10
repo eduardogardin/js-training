@@ -11,7 +11,8 @@ export const promiseDef = {
         'Favorece composição do seu código #não garante'
     ],
     desvantagens: [
-        'Retorna somente um valor e o seu ciclo de vida acaba'
+        'Retorna somente um valor e o seu ciclo de vida acaba (RxJS)',
+        'Não é cancelável (RxJS)'
     ],
     observacoes: [
         'Normalmente nós somos consumidores das promises (fetch, jQuery, middlewares, etc)'

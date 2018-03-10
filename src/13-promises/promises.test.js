@@ -11,7 +11,8 @@ test('promises def', () => {
     expect(promiseDef.vantagens[2]).toEqual('Mais fácil de ler e manter o código');
     expect(promiseDef.vantagens[3]).toEqual('Favorece composição do seu código #não garante');
 
-    expect(promiseDef.desvantagens[0]).toEqual('Retorna somente um valor e o seu ciclo de vida acaba');
+    expect(promiseDef.desvantagens[0]).toEqual('Retorna somente um valor e o seu ciclo de vida acaba (RxJS)');
+    expect(promiseDef.desvantagens[1]).toEqual('Não é cancelável (RxJS)');
 
     expect(promiseDef.observacoes[0]).toEqual('Normalmente nós somos consumidores das promises (fetch, jQuery, middlewares, etc)');
 });
