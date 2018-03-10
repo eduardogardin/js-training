@@ -14,3 +14,8 @@ export const callbackDef = {
         'Não garante o tratamento de erros'
     ]
 };
+
+export const simpleCallback = (callback = () => 'Empty callback') => {
+
+    return callback('My first callback');
+};
